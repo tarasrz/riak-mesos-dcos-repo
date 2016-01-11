@@ -1,5 +1,5 @@
 {
   "pip": [
-    "http://riak-tools.s3.amazonaws.com/riak-mesos/dcos-riak-0.3.0.tar.gz"
+    "https://github.com/basho-labs/riak-mesos-dcos-cli/archive/0.3.0.tar.gz"
   ]
 }
