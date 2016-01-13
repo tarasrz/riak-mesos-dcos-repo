@@ -1,5 +1,5 @@
 {
   "pip": [
-    "https://github.com/basho-labs/riak-mesos-dcos-cli/archive/0.3.0.tar.gz"
+      "git+https://github.com/basho-labs/riak-mesos-tools.git@0.3.0#egg=riak_mesos"
   ]
 }
