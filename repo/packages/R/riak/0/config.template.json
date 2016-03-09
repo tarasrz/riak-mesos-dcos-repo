@@ -162,6 +162,11 @@
                             "description": "Package location for Riak Proxy tarball.",
                             "default": "{{proxy_url}}"
                         },
+                        "use-public": {
+                            "type": "boolean",
+                            "description": "When true, only deploys proxy on public agents.",
+                            "default": false
+                        },
                         "cpus": {
                             "type": "number",
                             "description": "Riak Proxy CPU requirements",
