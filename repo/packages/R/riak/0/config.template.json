@@ -97,7 +97,7 @@
                         "mem": {
                             "type": "number",
                             "description": "Riak Mesos Scheduler Memory requirements",
-                            "default": 2048
+                            "default": 2048.0
                         }
                     }
                 },
@@ -118,7 +118,7 @@
                         "mem": {
                             "type": "number",
                             "description": "Riak Mesos Executor Memory requirements",
-                            "default": 512
+                            "default": 512.0
                         }
                     }
                 },
@@ -144,12 +144,12 @@
                         "mem": {
                             "type": "number",
                             "description": "Riak Memory requirements",
-                            "default": 8000
+                            "default": 8000.0
                         },
                         "disk": {
                             "type": "number",
                             "description": "Riak Disk requirements",
-                            "default": 20000
+                            "default": 20000.0
                         }
                     }
                 },
@@ -175,7 +175,7 @@
                         "mem": {
                             "type": "number",
                             "description": "Riak Proxy Memory requirements",
-                            "default": 1024
+                            "default": 1024.0
                         }
                     }
                 }
