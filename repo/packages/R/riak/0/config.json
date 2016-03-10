@@ -162,6 +162,11 @@
                             "description": "Package location for Riak Proxy tarball.",
                             "default": "http://riak-tools.s3.amazonaws.com/riak_mesos_director/0.3/0.3.1/ubuntu/trusty/riak_mesos_director-0.3.1-amd64.tar.gz"
                         },
+                        "use-public": {
+                            "type": "boolean",
+                            "description": "When true, only deploys proxy on public agents.",
+                            "default": false
+                        },
                         "cpus": {
                             "type": "number",
                             "description": "Riak Proxy CPU requirements",
