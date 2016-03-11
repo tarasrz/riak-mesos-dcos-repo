@@ -1,13 +1,30 @@
 {
-  "id": "{{riak.framework-name}}",
-  "instances": {{riak.instances}},
-  "cpus": {{riak.cpus}},
-  "mem": {{riak.mem}},
-  "ports": [0, 0],
-  "uris": ["{{riak.url}}"],
-  "env": {"USE_SUPER_CHROOT": "{{riak.super-chroot}}"},
-  "cmd": "riak_mesos_framework/framework_linux_amd64 -master={{riak.master}} -zk={{riak.zk}} -name={{riak.framework-name}} -user={{riak.user}}{{#riak.ip}} -ip={{riak.ip}}{{/riak.ip}}{{#riak.hostname}} -hostname={{riak.hostname}}{{/riak.hostname}}{{#riak.log}} -log={{riak.log}}{{/riak.log}}{{#riak.role}} -role={{riak.role}}{{/riak.role}}{{#riak.auth-provider}} -mesos_authentication_provider={{riak.auth-provider}}{{/riak.auth-provider}}{{#riak.auth-principal}} -mesos_authentication_principal={{riak.auth-principal}}{{/riak.auth-principal}}{{#riak.auth-secret-file}} -mesos_authentication_secret_file={{riak.auth-secret-file}}{{/riak.auth-secret-file}}{{#riak.node.cpus}} -node_cpus={{riak.node.cpus}}{{/riak.node.cpus}}{{#riak.node.mem}} -node_mem={{riak.node.mem}}{{/riak.node.mem}}{{#riak.node.disk}} -node_disk={{riak.node.disk}}{{/riak.node.disk}}{{#riak.flags}} {{riak.flags}}{{/riak.flags}}",
-  "healthChecks": [
+    "id":"{{riak.framework-name}}",
+    "instances": {{riak.instances}},
+    "cpus": {{riak.scheduler.cpus}},
+    "mem": {{riak.scheduler.mem}},
+    "ports":[ 0 ]
+    "uris": ["{{riak.scheduler.url}}", "{{riak.executor.url}}", "{{riak.node.url}}", "{{riak.node.patches-url}}"],
+    "cmd":"./riak_mesos_scheduler/bin/ermf-scheduler",
+    "env": {
+        "RIAK_MESOS_NAME": "{{riak.framework-name}}"
+        ,"RIAK_MESOS_ZK": "{{riak.zk}}"
+        ,"RIAK_MESOS_MASTER": "{{riak.master}}"
+        ,"RIAK_MESOS_USER": "{{riak.user}}"
+        {{#riak.auth-principal}},"RIAK_MESOS_PRINCIPAL": "{{riak.auth-principal}}"{{/riak.auth-principal}}
+        {{#riak.auth-provider}},"RIAK_MESOS_PROVIDER": "{{riak.auth-provider}}"{{/riak.auth-provider}}
+        {{#riak.auth-secret-file}},"RIAK_MESOS_SECRET_FILE": "{{riak.auth-secret-file}}"{{/riak.auth-secret-file}}
+        {{#riak.role}},"RIAK_MESOS_ROLE": "{{riak.role}}"{{/riak.role}}
+        {{#riak.ip}},"RIAK_MESOS_IP": "{{riak.ip}}"{{/riak.ip}}
+        {{#riak.hostname}},"RIAK_MESOS_HOSTNAME": "{{riak.hostname}}"{{/riak.hostname}}
+        {{#riak.failover-timeout}},"RIAK_MESOS_FAILOVER_TIMEOUT": {{riak.failover-timeout}}{{/riak.failover-timeout}}
+        {{#riak.node.cpus}},"RIAK_MESOS_NODE_CPUS": {{riak.node.cpus}}{{/riak.node.cpus}}
+        {{#riak.node.mem}},"RIAK_MESOS_NODE_MEM": {{riak.node.mem}}{{/riak.node.mem}}
+        {{#riak.node.disk}},"RIAK_MESOS_NODE_DISK": {{riak.node.disk}}{{/riak.node.disk}}
+        {{#riak.executor.cpus}},"RIAK_MESOS_EXECUTOR_CPUS": {{riak.executor.cpus}}{{/riak.executor.cpus}}
+        {{#riak.executor.mem}},"RIAK_MESOS_EXECUTOR_MEM": {{riak.executor.mem}}{{/riak.executor.mem}}
+    },
+    "healthChecks": [
     {
       "path": "/healthcheck",
       "portIndex": 0,
