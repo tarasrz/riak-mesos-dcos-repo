@@ -22,7 +22,7 @@
                 },
                 "master": {
                     "type": "string",
-                    "description": "The URL of the Mesos master. The format is zk://host1:port/mesos.",
+                    "description": "The URL of the Mesos master.",
                     "default": "leader.mesos:5050"
                 },
                 "zk": {
