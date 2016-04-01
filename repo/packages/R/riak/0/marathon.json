@@ -19,12 +19,12 @@
         {{#riak.role}},"RIAK_MESOS_ROLE": "{{riak.role}}"{{/riak.role}}
         {{#riak.ip}},"RIAK_MESOS_IP": "{{riak.ip}}"{{/riak.ip}}
         {{#riak.hostname}},"RIAK_MESOS_HOSTNAME": "{{riak.hostname}}"{{/riak.hostname}}
-        {{#riak.failover-timeout}},"RIAK_MESOS_FAILOVER_TIMEOUT": {{riak.failover-timeout}}{{/riak.failover-timeout}}
-        {{#riak.node.cpus}},"RIAK_MESOS_NODE_CPUS": {{riak.node.cpus}}{{/riak.node.cpus}}
-        {{#riak.node.mem}},"RIAK_MESOS_NODE_MEM": {{riak.node.mem}}{{/riak.node.mem}}
-        {{#riak.node.disk}},"RIAK_MESOS_NODE_DISK": {{riak.node.disk}}{{/riak.node.disk}}
-        {{#riak.executor.cpus}},"RIAK_MESOS_EXECUTOR_CPUS": {{riak.executor.cpus}}{{/riak.executor.cpus}}
-        {{#riak.executor.mem}},"RIAK_MESOS_EXECUTOR_MEM": {{riak.executor.mem}}{{/riak.executor.mem}}
+        {{#riak.failover-timeout}},"RIAK_MESOS_FAILOVER_TIMEOUT": "{{riak.failover-timeout}}"{{/riak.failover-timeout}}
+        {{#riak.node.cpus}},"RIAK_MESOS_NODE_CPUS": "{{riak.node.cpus}}"{{/riak.node.cpus}}
+        {{#riak.node.mem}},"RIAK_MESOS_NODE_MEM": "{{riak.node.mem}}"{{/riak.node.mem}}
+        {{#riak.node.disk}},"RIAK_MESOS_NODE_DISK": "{{riak.node.disk}}"{{/riak.node.disk}}
+        {{#riak.executor.cpus}},"RIAK_MESOS_EXECUTOR_CPUS": "{{riak.executor.cpus}}"{{/riak.executor.cpus}}
+        {{#riak.executor.mem}},"RIAK_MESOS_EXECUTOR_MEM": "{{riak.executor.mem}}"{{/riak.executor.mem}}
     },
     "healthChecks": [
     {
