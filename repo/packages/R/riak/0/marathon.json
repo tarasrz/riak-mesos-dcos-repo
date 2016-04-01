@@ -3,7 +3,7 @@
     "instances": {{riak.instances}},
     "cpus": {{riak.scheduler.cpus}},
     "mem": {{riak.scheduler.mem}},
-    "ports":[ 0 ]
+    "ports":[ 0 ],
     "uris": ["{{riak.scheduler.url}}", "{{riak.executor.url}}", "{{riak.node.url}}", "{{riak.node.patches-url}}"],
     "cmd":"./riak_mesos_scheduler/bin/ermf-scheduler",
     {{#riak.constraints}}"constraints": {{riak.constraints}},{{/riak.constraints}}
