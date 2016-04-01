@@ -6,13 +6,13 @@
     "ports":[ 0 ]
     "uris": ["{{riak.scheduler.url}}", "{{riak.executor.url}}", "{{riak.node.url}}", "{{riak.node.patches-url}}"],
     "cmd":"./riak_mesos_scheduler/bin/ermf-scheduler",
-    {{#riak.constraints}}"constraints": "{{riak.constraints}}",{{/riak.constraints}}
+    {{#riak.constraints}}"constraints": {{riak.constraints}},{{/riak.constraints}}
     "env": {
         "RIAK_MESOS_NAME": "{{riak.framework-name}}"
         ,"RIAK_MESOS_ZK": "{{riak.zk}}"
         ,"RIAK_MESOS_MASTER": "{{riak.master}}"
         ,"RIAK_MESOS_USER": "{{riak.user}}"
-        {{#riak.scheduler.constraints}},"RIAK_MESOS_CONSTRAINTS": "{{riak.scheduler.constraints}}"{{/riak.scheduler.constraints}}
+        {{#riak.scheduler.constraints}},"RIAK_MESOS_CONSTRAINTS": {{riak.scheduler.constraints}}{{/riak.scheduler.constraints}}
         {{#riak.auth-principal}},"RIAK_MESOS_PRINCIPAL": "{{riak.auth-principal}}"{{/riak.auth-principal}}
         {{#riak.auth-provider}},"RIAK_MESOS_PROVIDER": "{{riak.auth-provider}}"{{/riak.auth-provider}}
         {{#riak.auth-secret-file}},"RIAK_MESOS_SECRET_FILE": "{{riak.auth-secret-file}}"{{/riak.auth-secret-file}}
