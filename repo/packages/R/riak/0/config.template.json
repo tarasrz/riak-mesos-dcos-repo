@@ -80,6 +80,11 @@
                     "description": "Memory requirements",
                     "default": 5
                 },
+                "constraints": {
+                    "type": "array",
+                    "description": "Marathon constraints for the framework/scheduler instance",
+                    "default": []
+                },
                 "scheduler": {
                     "type": "object",
                     "depscription": "Requirements for Riak Mesos Scheduler",
@@ -98,6 +103,11 @@
                             "type": "number",
                             "description": "Riak Mesos Scheduler Memory requirements",
                             "default": 2048.0
+                        },
+                        "constraints": {
+                            "type": "array",
+                            "description": "Scheduler constraints for Riak node tasks",
+                            "default": [["hostname", "UNIQUE"]]
                         }
                     }
                 },
