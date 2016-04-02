@@ -11,7 +11,7 @@
                     "default": "riak"
                 },
                 "hostname": {
-                    "default": "riak.mesos",
+                    "default": "riak.marathon.mesos",
                     "type": "string",
                     "description": "Framework HTTP API hostname."
                 },
@@ -99,7 +99,8 @@
                         "minItems": 2,
                         "additionalItems": false
                     },
-                    "description": "Marathon constraints for the framework/scheduler instance. Valid constraint operators are one of UNIQUE, CLUSTER, GROUP_BY, LIKE, UNLIKE."
+                    "description": "Marathon constraints for the framework/scheduler instance. Valid constraint operators are one of UNIQUE, CLUSTER, GROUP_BY, LIKE, UNLIKE.",
+                    "default": [["hostname", "UNIQUE"]]
                 },
                 "scheduler": {
                     "type": "object",
