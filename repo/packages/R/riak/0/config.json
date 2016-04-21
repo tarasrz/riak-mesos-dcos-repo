@@ -177,7 +177,7 @@
                         "patches-url": {
                             "type": "string",
                             "description": "Package location for Riak patches tarball.",
-                            "default": "https://github.com/basho-labs/riak_explorer/releases/download/0.2.0/riak_explorer-0.2.0-ubuntu-trusty-amd64.tar.gz"
+                            "default": "https://github.com/basho-labs/riak_explorer/releases/download/0.2.0/riak_explorer-0.2.0.patch-ubuntu-trusty-amd64.tar.gz"
                         },
                         "cpus": {
                             "type": "number",
