@@ -111,6 +111,11 @@
                             "description": "Package location for Riak Mesos Scheduler tarball.",
                             "default": "{{scheduler_url}}"
                         },
+                        "package": {
+                            "type": "string",
+                            "description": "Package name for Riak Mesos Scheduler tarball.",
+                            "default": "{{scheduler_package}}"
+                        },
                         "cpus": {
                             "type": "number",
                             "description": "Riak Mesos Scheduler CPU requirements",
@@ -153,6 +158,11 @@
                             "description": "Package location for Riak Mesos Executor tarball.",
                             "default": "{{executor_url}}"
                         },
+                        "package": {
+                            "type": "string",
+                            "description": "Package name for Riak Mesos Executor tarball.",
+                            "default": "{{executor_package}}"
+                        },
                         "cpus": {
                             "type": "number",
                             "description": "Riak Mesos Executor CPU requirements",
@@ -174,15 +184,30 @@
                             "description": "Package location for Riak tarball.",
                             "default": "{{node_url}}"
                         },
+                        "package": {
+                            "type": "string",
+                            "description": "Package name for Riak tarball.",
+                            "default": "{{node_package}}"
+                        },
                         "patches-url": {
                             "type": "string",
                             "description": "Package location for Riak patches tarball.",
                             "default": "{{patches_url}}"
                         },
+                        "patches-package": {
+                            "type": "string",
+                            "description": "Package name for Riak patches tarball.",
+                            "default": "{{patches_package}}"
+                        },
                         "explorer-url": {
                             "type": "string",
                             "description": "Package location for Riak Explorer tarball.",
                             "default": "{{explorer_url}}"
+                        },
+                        "explorer-package": {
+                            "type": "string",
+                            "description": "Package name for Riak Explorer tarball.",
+                            "default": "{{explorer_package}}"
                         },
                         "cpus": {
                             "type": "number",
