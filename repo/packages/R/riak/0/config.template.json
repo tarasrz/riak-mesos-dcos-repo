@@ -177,6 +177,11 @@
                         "patches-url": {
                             "type": "string",
                             "description": "Package location for Riak patches tarball.",
+                            "default": "{{patches_url}}"
+                        },
+                        "explorer-url": {
+                            "type": "string",
+                            "description": "Package location for Riak Explorer tarball.",
                             "default": "{{explorer_url}}"
                         },
                         "cpus": {
