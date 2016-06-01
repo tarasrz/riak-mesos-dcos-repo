@@ -109,7 +109,7 @@
                         "url": {
                             "type": "string",
                             "description": "Package location for Riak Mesos Scheduler tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-scheduler/releases/download/1.0.rc2/riak_mesos_scheduler-1.0.rc2-ubuntu-14.04-amd64.tar.gz"
+                            "default": "https://github.com/basho-labs/riak-mesos-scheduler/releases/download/1.0-rc2/riak_mesos_scheduler-1.0.rc2-ubuntu-14.04-amd64.tar.gz"
                         },
                         "package": {
                             "type": "string",
@@ -156,7 +156,7 @@
                         "url": {
                             "type": "string",
                             "description": "Package location for Riak Mesos Executor tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.0.rc2/riak_mesos_executor-1.0.rc2-ubuntu-14.04-amd64.tar.gz"
+                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.0-rc2/riak_mesos_executor-1.0.rc2-ubuntu-14.04-amd64.tar.gz"
                         },
                         "package": {
                             "type": "string",
@@ -192,7 +192,7 @@
                         "patches-url": {
                             "type": "string",
                             "description": "Package location for Riak patches tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.0.rc2/riak_erlpmd_patches-1.0.rc2-ubuntu-14.04-amd64.tar.gz"
+                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.0-rc2/riak_erlpmd_patches-1.0.rc2-ubuntu-14.04-amd64.tar.gz"
                         },
                         "patches-package": {
                             "type": "string",
@@ -233,7 +233,7 @@
                         "url": {
                             "type": "string",
                             "description": "Package location for Riak Mesos Director tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-director/releases/download/1.0.rc1/riak_mesos_director-1.0.rc1-ubuntu-14.04-amd64.tar.gz"
+                            "default": "https://github.com/basho-labs/riak-mesos-director/releases/download/1.0-rc1/riak_mesos_director-1.0.rc1-ubuntu-14.04-amd64.tar.gz"
                         },
                         "use-public": {
                             "type": "boolean",
