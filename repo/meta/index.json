@@ -1,7 +1,7 @@
 {
   "packages":[
     {
-      "currentVersion":"1.0-rc2",
+      "currentVersion":"1.0.0",
       "description":"A distributed NoSQL key-value data store that offers high availability, fault tolerance, operational simplicity, and scalability.",
       "framework":true,
       "name":"riak",
@@ -12,7 +12,7 @@
         "riak"
       ],
       "versions":{
-        "1.0-rc2":"0"
+        "1.0.0":"0"
       }
     }
   ],
