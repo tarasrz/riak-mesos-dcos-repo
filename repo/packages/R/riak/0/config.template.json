@@ -3,7 +3,7 @@
     "properties": {
         "riak": {
             "type": "object",
-            "depscription": "Riak Mesos Framework specific properties",
+            "description": "Riak Mesos Framework specific properties",
             "properties": {
                 "framework-name": {
                     "type": "string",
@@ -100,11 +100,11 @@
                         "additionalItems": false
                     },
                     "description": "Marathon constraints for the framework/scheduler instance. Valid constraint operators are one of UNIQUE, CLUSTER, GROUP_BY, LIKE, UNLIKE.",
-                    "default": [["hostname", "UNIQUE"]]
+                    "default": []
                 },
                 "scheduler": {
                     "type": "object",
-                    "depscription": "Requirements for Riak Mesos Scheduler",
+                    "description": "Requirements for Riak Mesos Scheduler",
                     "properties": {
                         "url": {
                             "type": "string",
@@ -151,7 +151,7 @@
                 },
                 "executor": {
                     "type": "object",
-                    "depscription": "Requirements for Riak Mesos Executor",
+                    "description": "Requirements for Riak Mesos Executor",
                     "properties": {
                         "url": {
                             "type": "string",
@@ -177,7 +177,7 @@
                 },
                 "node": {
                     "type": "object",
-                    "depscription": "Requirements for Riak",
+                    "description": "Requirements for Riak",
                     "properties": {
                         "url": {
                             "type": "string",
@@ -228,7 +228,7 @@
                 },
                 "director": {
                     "type": "object",
-                    "depscription": "Requirements for Riak Mesos Director",
+                    "description": "Requirements for Riak Mesos Director",
                     "properties": {
                         "url": {
                             "type": "string",
