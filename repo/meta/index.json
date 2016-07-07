@@ -5,6 +5,7 @@
       "description":"A distributed NoSQL key-value data store that offers high availability, fault tolerance, operational simplicity, and scalability.",
       "framework":true,
       "name":"riak",
+      "selected":false,
       "tags":[
         "mesosphere",
         "framework",
@@ -16,5 +17,5 @@
       }
     }
   ],
-  "version":"1.0.0-rc1"
+  "version":"2.0.0-rc2"
 }
