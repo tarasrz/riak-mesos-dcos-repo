@@ -4,7 +4,7 @@
     "cpus": {{riak.scheduler.cpus}},
     "mem": {{riak.scheduler.mem}},
     "ports":[ 0 ],
-    "uris": ["{{riak.scheduler.url}}", "{{riak.executor.url}}", "{{riak.node.url}}", "{{riak.node.patches-url}}"],
+    "uris": ["{{riak.scheduler.url}}", "{{riak.executor.url}}", "{{riak.node.url}}", "{{riak.node.explorer-url}}", "{{riak.node.patches-url}}"],
     "cmd":"./riak_mesos_scheduler/bin/ermf-scheduler",
     {{#riak.constraints}}"constraints": {{{riak.constraints}}},{{/riak.constraints}}
     "env": {
@@ -12,6 +12,15 @@
         ,"RIAK_MESOS_ZK": "{{riak.zk}}"
         ,"RIAK_MESOS_MASTER": "{{riak.master}}"
         ,"RIAK_MESOS_USER": "{{riak.user}}"
+        ,"RIAK_MESOS_DIRECTOR_URL": "{{riak.director.url}}"
+        ,"RIAK_MESOS_DIRECTOR_CPUS": "{{riak.director.cpus}}"
+        ,"RIAK_MESOS_DIRECTOR_MEM": "{{riak.director.mem}}"
+        {{#riak.director.use-public}},"RIAK_MESOS_DIRECTOR_PUBLIC": "{{riak.director.use-public}}"{{/riak.director.use-public}}
+        {{#riak.scheduler.package}},"RIAK_MESOS_SCHEDULER_PKG": "{{riak.scheduler.package}}"{{/riak.scheduler.package}}
+        {{#riak.executor.package}},"RIAK_MESOS_EXECUTOR_PKG": "{{riak.executor.package}}"{{/riak.executor.package}}
+        {{#riak.node.package}},"RIAK_MESOS_RIAK_PKG": "{{riak.node.package}}"{{/riak.node.package}}
+        {{#riak.node.patches-package}},"RIAK_MESOS_PATCHES_PKG": "{{riak.node.patches-package}}"{{/riak.node.patches-package}}
+        {{#riak.node.explorer-package}},"RIAK_MESOS_EXPLORER_PKG": "{{riak.node.explorer-package}}"{{/riak.node.explorer-package}}
         {{#riak.scheduler.constraints}},"RIAK_MESOS_CONSTRAINTS": {{{riak.scheduler.constraints}}}{{/riak.scheduler.constraints}}
         {{#riak.auth-principal}},"RIAK_MESOS_PRINCIPAL": "{{riak.auth-principal}}"{{/riak.auth-principal}}
         {{#riak.auth-provider}},"RIAK_MESOS_PROVIDER": "{{riak.auth-provider}}"{{/riak.auth-provider}}
