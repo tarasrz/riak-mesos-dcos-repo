@@ -45,5 +45,8 @@
       "timeoutSeconds": {{riak.healthcheck-timeout-seconds}},
       "maxConsecutiveFailures": {{riak.healthcheck-max-consecutive-failures}},
       "ignoreHttp1xx": false
-    }]
+    }],
+    "labels": {
+        "DCOS_PACKAGE_FRAMEWORK_NAME": "{{riak.framework-name}}"
+    }
 }
