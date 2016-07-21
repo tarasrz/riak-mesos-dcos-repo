@@ -21,7 +21,7 @@
         {{#riak.node.package}},"RIAK_MESOS_RIAK_PKG": "{{riak.node.package}}"{{/riak.node.package}}
         {{#riak.node.patches-package}},"RIAK_MESOS_PATCHES_PKG": "{{riak.node.patches-package}}"{{/riak.node.patches-package}}
         {{#riak.node.explorer-package}},"RIAK_MESOS_EXPLORER_PKG": "{{riak.node.explorer-package}}"{{/riak.node.explorer-package}}
-        {{#riak.scheduler.constraints}},"RIAK_MESOS_CONSTRAINTS": {{{riak.scheduler.constraints}}}{{/riak.scheduler.constraints}}
+        {{#riak.scheduler.constraints}},"RIAK_MESOS_CONSTRAINTS": "{{riak.scheduler.constraints}}"{{/riak.scheduler.constraints}}
         {{#riak.auth-principal}},"RIAK_MESOS_PRINCIPAL": "{{riak.auth-principal}}"{{/riak.auth-principal}}
         {{#riak.auth-provider}},"RIAK_MESOS_PROVIDER": "{{riak.auth-provider}}"{{/riak.auth-provider}}
         {{#riak.auth-secret-file}},"RIAK_MESOS_SECRET_FILE": "{{riak.auth-secret-file}}"{{/riak.auth-secret-file}}

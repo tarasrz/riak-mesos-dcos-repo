@@ -109,12 +109,12 @@
                         "url": {
                             "type": "string",
                             "description": "Package location for Riak Mesos Scheduler tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-scheduler/releases/download/1.1.0/riak_mesos_scheduler-1.1.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
+                            "default": "https://github.com/basho-labs/riak-mesos-scheduler/releases/download/1.2.1/riak_mesos_scheduler-1.2.1-mesos-0.28.1-ubuntu-14.04.tar.gz"
                         },
                         "package": {
                             "type": "string",
                             "description": "Package name for Riak Mesos Scheduler tarball.",
-                            "default": "riak_mesos_scheduler-1.1.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
+                            "default": "riak_mesos_scheduler-1.2.1-mesos-0.28.1-ubuntu-14.04.tar.gz"
                         },
                         "cpus": {
                             "type": "number",
@@ -127,25 +127,9 @@
                             "default": 2048.0
                         },
                         "constraints": {
-                            "type": "array",
-                            "items": {
-                                "type": "array",
-                                "items": [
-                                    {
-                                        "type": "string"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "enum": ["UNIQUE", "CLUSTER", "GROUP_BY", "LIKE", "UNLIKE"]
-                                    },
-                                    {
-                                        "type": "string"
-                                    }
-                                ],
-                                "minItems": 2,
-                                "additionalItems": false
-                            },
-                            "description": "Scheduler constraints for Riak node tasks. Marathon constraints for the framework/scheduler instance. Valid constraint operators are one of UNIQUE, CLUSTER, GROUP_BY, LIKE, UNLIKE."
+                            "type": "string",
+                            "default": "[]",
+                            "description": "Scheduler constraints for Riak node tasks. Valid constraint operators are one of UNIQUE, CLUSTER, GROUP_BY, LIKE, UNLIKE."
                         }
                     }
                 },
