@@ -1,7 +1,7 @@
 {
   "packagingVersion": "2.0",
   "name": "riak",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "framework": true,
   "tags": ["mesosphere", "framework", "database", "riak"],
   "maintainer": "help@basho.com",
