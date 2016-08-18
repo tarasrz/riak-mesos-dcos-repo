@@ -4,13 +4,33 @@
       "currentVersion":"1.2.0",
       "description":"A distributed NoSQL key-value data store that offers high availability, fault tolerance, operational simplicity, and scalability.",
       "framework":true,
-      "name":"riak",
+      "name":"riak-kv",
       "selected":false,
       "tags":[
         "mesosphere",
         "framework",
         "database",
-        "riak"
+        "riak",
+        "riak-kv"
+      ],
+      "versions":{
+        "1.1.0":"0",
+        "1.2.0":"1"
+      }
+    },
+    {
+      "currentVersion":"1.2.0",
+      "description":"A distributed NoSQL key-value data store that offers high availability, fault tolerance, operational simplicity, and scalability.",
+      "framework":true,
+      "name":"riak-ts",
+      "selected":false,
+      "tags":[
+        "mesosphere",
+        "framework",
+        "database",
+        "riak",
+        "riak-ts",
+        "time-series"
       ],
       "versions":{
         "1.1.0":"0",
