@@ -11,7 +11,6 @@
                     "default": "riak-ts"
                 },
                 "hostname": {
-                    "default": "riak.marathon.mesos",
                     "type": "string",
                     "description": "Framework HTTP API hostname."
                 },
@@ -239,7 +238,6 @@
             },
             "required": [
                 "framework-name",
-                "hostname",
                 "marathon",
                 "master",
                 "zk",
