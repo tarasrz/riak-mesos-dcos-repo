@@ -1,0 +1,6 @@
+{
+  "pip": [
+    "git+https://github.com/basho-labs/riak-mesos-tools.git@mtc-split-kv-ts-dcos-packages#egg=riak_mesos",
+    "git+https://github.com/sanmiguel/fictional-octo-sniffle@riak-kv"
+  ]
+}
