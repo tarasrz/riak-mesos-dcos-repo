@@ -11,6 +11,7 @@
                     "default": "riak-ts"
                 },
                 "hostname": {
+                    "default": "riak-ts.marathon.mesos",
                     "type": "string",
                     "description": "Framework HTTP API hostname."
                 },
@@ -37,7 +38,7 @@
                 "role": {
                     "type": "string",
                     "description": "Framework Role.",
-                    "default": "riak"
+                    "default": "riak-ts"
                 },
                 "auth-principal": {
                     "type": "string",
@@ -238,6 +239,7 @@
             },
             "required": [
                 "framework-name",
+                "hostname",
                 "marathon",
                 "master",
                 "zk",
