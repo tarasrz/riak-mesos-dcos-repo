@@ -109,12 +109,12 @@
                         "url": {
                             "type": "string",
                             "description": "Package location for Riak Mesos Scheduler tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-scheduler/releases/download/1.4.1/riak_mesos_scheduler-1.4.1-mesos-0.28.1-ubuntu-14.04.tar.gz"
+                            "default": "https://github.com/basho-labs/riak-mesos-scheduler/releases/download/1.7.1/riak_mesos_scheduler-1.7.1-mesos-0.28.1-ubuntu-14.04.tar.gz"
                         },
                         "package": {
                             "type": "string",
                             "description": "Package name for Riak Mesos Scheduler tarball.",
-                            "default": "riak_mesos_scheduler-1.4.1-mesos-0.28.1-ubuntu-14.04.tar.gz"
+                            "default": "riak_mesos_scheduler-1.7.1-mesos-0.28.1-ubuntu-14.04.tar.gz"
                         },
                         "cpus": {
                             "type": "number",
@@ -140,12 +140,12 @@
                         "url": {
                             "type": "string",
                             "description": "Package location for Riak Mesos Executor tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.4.0/riak_mesos_executor-1.4.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
+                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.6.0/riak_mesos_executor-1.6.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
                         },
                         "package": {
                             "type": "string",
                             "description": "Package name for Riak Mesos Executor tarball.",
-                            "default": "riak_mesos_executor-1.4.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
+                            "default": "riak_mesos_executor-1.6.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
                         },
                         "cpus": {
                             "type": "number",
@@ -176,22 +176,22 @@
                         "patches-url": {
                             "type": "string",
                             "description": "Package location for Riak patches tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.4.0/riak_erlpmd_patches-1.4.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
+                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.6.0/riak_erlpmd_patches-1.6.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
                         },
                         "patches-package": {
                             "type": "string",
                             "description": "Package name for Riak patches tarball.",
-                            "default": "riak_erlpmd_patches-1.4.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
+                            "default": "riak_erlpmd_patches-1.6.0-mesos-0.28.1-ubuntu-14.04.tar.gz"
                         },
                         "explorer-url": {
                             "type": "string",
                             "description": "Package location for Riak Explorer tarball.",
-                            "default": "https://github.com/basho-labs/riak_explorer/releases/download/1.1.1/riak_explorer-1.1.1.patch-ubuntu-14.04.tar.gz"
+                            "default": "https://github.com/basho-labs/riak_explorer/releases/download/1.2.0/riak_explorer-1.2.0.patch-ubuntu-14.04.tar.gz"
                         },
                         "explorer-package": {
                             "type": "string",
                             "description": "Package name for Riak Explorer tarball.",
-                            "default": "riak_explorer-1.1.1.patch-ubuntu-14.04.tar.gz"
+                            "default": "riak_explorer-1.2.0.patch-ubuntu-14.04.tar.gz"
                         },
                         "cpus": {
                             "type": "number",
