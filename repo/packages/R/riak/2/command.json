@@ -1,6 +1,6 @@
 {
   "pip": [
-    "git+https://github.com/basho-labs/riak-mesos-tools.git@1.3.0#egg=riak_mesos",
+    "git+https://github.com/basho-labs/riak-mesos-tools.git@mtc-fix-director-wait-for-service#egg=riak_mesos",
     "git+https://github.com/basho-labs/riak-mesos-dcos-shims@master"
   ]
 }
