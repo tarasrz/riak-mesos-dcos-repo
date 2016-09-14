@@ -1,7 +1,7 @@
 {
   "packagingVersion": "2.0",
   "name": "riak-ts",
-  "version": "1.3.0",
+  "version": "1.3.0-ts-1.3.1",
   "framework": true,
   "tags": ["mesosphere", "framework", "database", "riak", "riak-ts", "time-series"],
   "maintainer": "help@basho.com",
