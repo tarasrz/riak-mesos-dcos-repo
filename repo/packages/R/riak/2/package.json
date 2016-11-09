@@ -1,6 +1,6 @@
 {
   "packagingVersion": "2.0",
-  "name": "riak",
+  "name": "riak-dev",
   "version": "1.3.0-kv-2.1.4",
   "framework": true,
   "tags": ["mesosphere", "framework", "database", "riak", "riak-kv", "riak-ts"],
