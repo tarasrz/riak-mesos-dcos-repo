@@ -22,6 +22,7 @@ resource_file_path = sys.argv[1]
 marathon_tpl_file_path = sys.argv[2]
 marathon_file_path = sys.argv[3]
 warning = "{{! Do not edit. Generated from marathon.json.mustache.tpl }}\n"
+fetch_placeholder = '"{{FETCH}}"'
 resource_urls_placeholder = '"{{RIAK_MESOS_RESOURCE_URLS}}"'
 
 
@@ -41,9 +42,20 @@ def get_resource_uris(file_path):
     return resource['assets']['uris']
 
 
-def create_marathon_resource_urls(resource_uris):
+def create_marathon_fetch(res_uris):
+    uris = []
+    for resource in res_uris:
+        fetch = {'extract': False}
+        if resource == 'scheduler':
+            fetch['extract'] = True
+        fetch['uri'] = '{{resource.assets.uris.' + resource + '}}'
+        uris.append(fetch)
+    return json.dumps(uris)
+
+
+def create_marathon_resource_urls(res_uris):
     urls = '"{'
-    for resource in resource_uris:
+    for resource in res_uris:
         resource_uri = '{{resource.assets.uris.' + resource + '}}'
         urls += '\\"' + resource + '\\": \\"' + resource_uri + '\\",'
     return urls[:-1] + '}"'
@@ -51,7 +63,10 @@ def create_marathon_resource_urls(resource_uris):
 
 resource_uris = get_resource_uris(resource_file_path)
 marathon_tpl_content = read_file(marathon_tpl_file_path)
+marathon_fetch = create_marathon_fetch(resource_uris)
 marathon_resource_urls = create_marathon_resource_urls(resource_uris)
+marathon_tpl_content = marathon_tpl_content.replace(fetch_placeholder,
+                                                    marathon_fetch)
 marathon_tpl_content = marathon_tpl_content.replace(resource_urls_placeholder,
                                                     marathon_resource_urls)
 marathon_tpl_content = warning + marathon_tpl_content

@@ -4,13 +4,8 @@
     "cpus": {{riak.scheduler.cpus}},
     "mem": {{riak.scheduler.mem}},
     "ports":[ 0 ],
-    "uris": ["{{resource.assets.uris.scheduler}}",
-             "{{resource.assets.uris.executor}}",
-             "{{resource.assets.uris.patches}}",
-             "{{resource.assets.uris.explorer}}",
-             "{{resource.assets.uris.director}}",
-             "{{resource.assets.uris.riak-kv-2-1}}",
-             "{{resource.assets.uris.riak-ts-1-3}}"],
+    {{! Generated field }}
+    "fetch": "{{FETCH}}",
     "cmd":"./riak_mesos_scheduler/bin/ermf-scheduler",
     {{#riak.constraints}}"constraints": {{{riak.constraints}}},{{/riak.constraints}}
     "env": {
