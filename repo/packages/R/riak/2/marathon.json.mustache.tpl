@@ -20,7 +20,8 @@
         ,"RIAK_MESOS_USER": "{{riak.user}}"
         ,"RIAK_MESOS_DIRECTOR_CPUS": "{{riak.director.cpus}}"
         ,"RIAK_MESOS_DIRECTOR_MEM": "{{riak.director.mem}}"
-        ,"RIAK_MESOS_RESOURCE_URLS": %%RIAK_MESOS_RESOURCE_URLS%%
+        {{! Generated field }}
+        ,"RIAK_MESOS_RESOURCE_URLS": "{{RIAK_MESOS_RESOURCE_URLS}}"
         {{#riak.director.use-public}},"RIAK_MESOS_DIRECTOR_PUBLIC": "{{riak.director.use-public}}"{{/riak.director.use-public}}
         {{#riak.scheduler.constraints}},"RIAK_MESOS_CONSTRAINTS": "{{riak.scheduler.constraints}}"{{/riak.scheduler.constraints}}
         {{#riak.auth-principal}},"RIAK_MESOS_PRINCIPAL": "{{riak.auth-principal}}"{{/riak.auth-principal}}

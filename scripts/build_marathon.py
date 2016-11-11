@@ -22,7 +22,7 @@ resource_file_path = sys.argv[1]
 marathon_tpl_file_path = sys.argv[2]
 marathon_file_path = sys.argv[3]
 warning = "{{! Do not edit. Generated from marathon.json.mustache.tpl }}\n"
-resource_urls_placeholder = '%%RIAK_MESOS_RESOURCE_URLS%%'
+resource_urls_placeholder = '"{{RIAK_MESOS_RESOURCE_URLS}}"'
 
 
 def read_file(file_path):
