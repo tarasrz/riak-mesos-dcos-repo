@@ -1,4 +1,3 @@
-{{! Do not edit. Generated from marathon.json.mustache.tpl }}
 {
     "id":"{{riak.framework-name}}",
     "instances": {{riak.instances}},
@@ -21,7 +20,7 @@
         ,"RIAK_MESOS_USER": "{{riak.user}}"
         ,"RIAK_MESOS_DIRECTOR_CPUS": "{{riak.director.cpus}}"
         ,"RIAK_MESOS_DIRECTOR_MEM": "{{riak.director.mem}}"
-        ,"RIAK_MESOS_RESOURCE_URLS": "{\"explorer\": \"{{resource.assets.uris.explorer}}\",\"director\": \"{{resource.assets.uris.director}}\",\"riak-ts-1-3\": \"{{resource.assets.uris.riak-ts-1-3}}\",\"riak-kv-2-1\": \"{{resource.assets.uris.riak-kv-2-1}}\",\"scheduler\": \"{{resource.assets.uris.scheduler}}\",\"executor\": \"{{resource.assets.uris.executor}}\",\"patches\": \"{{resource.assets.uris.patches}}\"}"
+        ,"RIAK_MESOS_RESOURCE_URLS": %%RIAK_MESOS_RESOURCE_URLS%%
         {{#riak.director.use-public}},"RIAK_MESOS_DIRECTOR_PUBLIC": "{{riak.director.use-public}}"{{/riak.director.use-public}}
         {{#riak.scheduler.constraints}},"RIAK_MESOS_CONSTRAINTS": "{{riak.scheduler.constraints}}"{{/riak.scheduler.constraints}}
         {{#riak.auth-principal}},"RIAK_MESOS_PRINCIPAL": "{{riak.auth-principal}}"{{/riak.auth-principal}}
