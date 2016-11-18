@@ -9,11 +9,7 @@
   },
   "assets": {
     "uris": {
-
-
-      "scheduler": "http://10.0.2.2/riak-mesos/framework/riak-mesos-scheduler/packages/riak_mesos_scheduler-1.8.2-36-g4a6926f-mesos-0.28.1-ubuntu-14.04.tar.gz",
-
-
+      "scheduler": "https://github.com/basho-labs/riak-mesos-scheduler/releases/download/1.8.2/riak_mesos_scheduler-1.8.2-mesos-1.0.0-centos-7.tar.gz.sha",
       "executor": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.7.1/riak_mesos_executor-1.7.1-mesos-1.0.0-centos-7.tar.gz",
       "patches": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.7.0/riak_erlpmd_patches-1.7.0-mesos-1.0.0-ubuntu-14.04.tar.gz",
       "explorer": "https://github.com/basho-labs/riak_explorer/releases/download/1.2.3/riak_explorer-1.2.3-centos-7.tar.gz",
