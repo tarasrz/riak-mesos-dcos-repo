@@ -10,4 +10,5 @@ $SCRIPTS_DIR/"1-validate-packages.sh";
 $SCRIPTS_DIR/"2-build-index.sh";
 $SCRIPTS_DIR/"3-validate-index.sh";
 $SCRIPTS_DIR/"4-detect-dependency-cycles.sh";
+$SCRIPTS_DIR/"5-build-marathon.sh"
 

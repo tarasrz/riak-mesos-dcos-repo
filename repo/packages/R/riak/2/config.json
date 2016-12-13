@@ -8,10 +8,10 @@
                 "framework-name": {
                     "type": "string",
                     "description": "Framework Instance Name.",
-                    "default": "riak-ts"
+                    "default": "riak"
                 },
                 "hostname": {
-                    "default": "riak-ts.marathon.mesos",
+                    "default": "riak.marathon.mesos",
                     "type": "string",
                     "description": "Framework HTTP API hostname."
                 },
@@ -38,7 +38,7 @@
                 "role": {
                     "type": "string",
                     "description": "Framework Role.",
-                    "default": "riak-ts"
+                    "default": "riak"
                 },
                 "auth-principal": {
                     "type": "string",
@@ -106,16 +106,6 @@
                     "type": "object",
                     "description": "Requirements for Riak Mesos Scheduler",
                     "properties": {
-                        "url": {
-                            "type": "string",
-                            "description": "Package location for Riak Mesos Scheduler tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-scheduler/releases/download/1.8.1/riak_mesos_scheduler-1.8.1-mesos-1.0.0-ubuntu-14.04.tar.gz"
-                        },
-                        "package": {
-                            "type": "string",
-                            "description": "Package name for Riak Mesos Scheduler tarball.",
-                            "default": "riak_mesos_scheduler-1.8.1-mesos-1.0.0-ubuntu-14.04.tar.gz"
-                        },
                         "cpus": {
                             "type": "number",
                             "description": "Riak Mesos Scheduler CPU requirements",
@@ -137,16 +127,6 @@
                     "type": "object",
                     "description": "Requirements for Riak Mesos Executor",
                     "properties": {
-                        "url": {
-                            "type": "string",
-                            "description": "Package location for Riak Mesos Executor tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.7.0/riak_mesos_executor-1.7.0-mesos-1.0.0-ubuntu-14.04.tar.gz"
-                        },
-                        "package": {
-                            "type": "string",
-                            "description": "Package name for Riak Mesos Executor tarball.",
-                            "default": "riak_mesos_executor-1.7.0-mesos-1.0.0-ubuntu-14.04.tar.gz"
-                        },
                         "cpus": {
                             "type": "number",
                             "description": "Riak Mesos Executor CPU requirements",
@@ -163,36 +143,6 @@
                     "type": "object",
                     "description": "Requirements for Riak",
                     "properties": {
-                        "url": {
-                            "type": "string",
-                            "description": "Package location for Riak tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos/releases/download/1.1.0/riak_ts-1.3.1-ubuntu-14.04.tar.gz"
-                        },
-                        "package": {
-                            "type": "string",
-                            "description": "Package name for Riak tarball.",
-                            "default": "riak_ts-1.3.1-ubuntu-14.04.tar.gz"
-                        },
-                        "patches-url": {
-                            "type": "string",
-                            "description": "Package location for Riak patches tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-executor/releases/download/1.7.0/riak_erlpmd_patches-1.7.0-mesos-1.0.0-ubuntu-14.04.tar.gz"
-                        },
-                        "patches-package": {
-                            "type": "string",
-                            "description": "Package name for Riak patches tarball.",
-                            "default": "riak_erlpmd_patches-1.7.0-mesos-1.0.0-ubuntu-14.04.tar.gz"
-                        },
-                        "explorer-url": {
-                            "type": "string",
-                            "description": "Package location for Riak Explorer tarball.",
-                            "default": "https://github.com/basho-labs/riak_explorer/releases/download/1.2.1/riak_explorer-1.2.1.patch-ubuntu-14.04.tar.gz"
-                        },
-                        "explorer-package": {
-                            "type": "string",
-                            "description": "Package name for Riak Explorer tarball.",
-                            "default": "riak_explorer-1.2.1.patch-ubuntu-14.04.tar.gz"
-                        },
                         "cpus": {
                             "type": "number",
                             "description": "Riak CPU requirements",
@@ -214,11 +164,6 @@
                     "type": "object",
                     "description": "Requirements for Riak Mesos Director",
                     "properties": {
-                        "url": {
-                            "type": "string",
-                            "description": "Package location for Riak Mesos Director tarball.",
-                            "default": "https://github.com/basho-labs/riak-mesos-director/releases/download/1.0.1/riak_mesos_director-1.0.1-ubuntu-14.04.tar.gz"
-                        },
                         "use-public": {
                             "type": "boolean",
                             "description": "When true, only deploys director on public agents.",

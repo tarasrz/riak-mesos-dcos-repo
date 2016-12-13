@@ -4,7 +4,7 @@
 
 - Add the DCOS Riak package to your DCOS repository sources:
 
-		dcos package repo add Riak https://github.com/basho-labs/riak-mesos-dcos-repo/archive/dcoscli-v0.4.x.zip
+		dcos package repo add Riak --index=0 https://github.com/basho-labs/riak-mesos-dcos-repo/archive/2.0.0-rc1.zip
 
 	NB: you may need to remove and re-add `Universe` afterwards for the Riak package to show up in `dcos package search riak`
 
