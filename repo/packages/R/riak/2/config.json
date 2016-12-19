@@ -118,7 +118,7 @@
                         },
                         "constraints": {
                             "type": "string",
-                            "default": "[]",
+                            "default": "[[\"hostname\", \"UNIQUE\"]]",
                             "description": "Scheduler constraints for Riak node tasks. Valid constraint operators are one of UNIQUE, CLUSTER, GROUP_BY, LIKE, UNLIKE."
                         }
                     }
