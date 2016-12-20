@@ -118,7 +118,7 @@
                         },
                         "constraints": {
                             "type": "string",
-                            "default": "[]",
+                            "default": "[[\"hostname\", \"UNIQUE\"]]",
                             "description": "Scheduler constraints for Riak node tasks. Valid constraint operators are one of UNIQUE, CLUSTER, GROUP_BY, LIKE, UNLIKE."
                         }
                     }
@@ -146,17 +146,17 @@
                         "cpus": {
                             "type": "number",
                             "description": "Riak CPU requirements",
-                            "default": 1.0
+                            "default": 8.0
                         },
                         "mem": {
                             "type": "number",
                             "description": "Riak Memory requirements",
-                            "default": 8000.0
+                            "default": 16000.0
                         },
                         "disk": {
                             "type": "number",
                             "description": "Riak Disk requirements",
-                            "default": 20000.0
+                            "default": 200000.0
                         }
                     }
                 },
