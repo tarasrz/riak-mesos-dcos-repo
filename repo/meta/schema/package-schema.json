@@ -4,7 +4,7 @@
   "properties": {
     "packagingVersion": {
       "type": "string",
-      "enum": ["2.0"]
+      "enum": ["2.0", "3.0"]
     },
     "name": {
       "type": "string"
