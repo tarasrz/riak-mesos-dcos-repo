@@ -26,7 +26,7 @@
             {"algo": "sha256", "value":"371475b592e959f0948e0b311f6a8789f8e7cdfc11e072563449e53aaa988fd9"}
           ],
           "kind": "executable",
-          "url": "https://github.com/basho-labs/riak-mesos-tools/releases/download/2.0.0-rc3/riak-mesos-linux"
+          "url": "https://github.com/basho-labs/riak-mesos-tools/releases/download/2.0.0-rc3/dcos-riak-linux"
         }
       }
     }
