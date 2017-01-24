@@ -6,6 +6,9 @@
       "type": "string",
       "enum": ["2.0", "3.0"]
     },
+    "minDcosReleaseVersion": {
+      "type": "string"
+    },
     "name": {
       "type": "string"
     },
