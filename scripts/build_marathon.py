@@ -21,7 +21,7 @@ for file in sys.argv[1:2]:
 resource_file_path = sys.argv[1]
 marathon_tpl_file_path = sys.argv[2]
 marathon_file_path = sys.argv[3]
-warning = "{{! Do not edit. Generated from marathon.json.mustache.tpl }}\n"
+warning = ""
 fetch_placeholder = '"{{FETCH}}"'
 resource_urls_placeholder = '"{{RIAK_MESOS_RESOURCE_URLS}}"'
 
