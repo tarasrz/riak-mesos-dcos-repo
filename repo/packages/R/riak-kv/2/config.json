@@ -219,6 +219,12 @@
                             "description": "Package location for Riak Mesos Director tarball.",
                             "default": "https://github.com/basho-labs/riak-mesos-director/releases/download/1.0.1/riak_mesos_director-1.0.1-centos-7.tar.gz"
                         },
+                        "package": {
+                            "type": "string",
+                            "description": "Package name for Riak Mesos Director tarballl.",
+                            "default": "riak_mesos_director-1.0.1-centos-7.tar.gz"
+                        },
+                        
                         "use-public": {
                             "type": "boolean",
                             "description": "When true, only deploys director on public agents.",
